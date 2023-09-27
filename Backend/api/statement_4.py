@@ -1,25 +1,3 @@
-'''
-import googletrans
-translator = googletrans.Translator()
-from flask import Flask, jsonify, request
-
-app = Flask(__name__)
-
-
-@app.route("/translate/<word>")
-def translate(word):
-    translation = translator.translate(word)
-    out = [{"source-text": word}, {"translated-text-in-english": translation.text}]
-    return jsonify(out)
-
-@app.route("/detect/<word>")
-def detect(word):
-    source = (translator.detect(word)).lang
-    op = [{"detected-lang": googletrans.LANGUAGES[source]}]
-    return jsonify(op)
-app.run()
-'''
-
 from flask import Flask, request, jsonify
 import googletrans
 from googletrans import Translator
