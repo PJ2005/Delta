@@ -1,6 +1,6 @@
 # Implementation of Task API
 The follwoing code is created using FastAPI for enpoint implementation along with SqlAlchemy for database.<br />
-The code runs on any browser on SwaggerUI a page built by FastAPI itself.<br />
+The code runs on any browser on **SwaggerUI** a page built by FastAPI itself.<br />
 Below are the steps to run the code: <br />
 1 - Open the terminal and change the directory to be inside the folder which contains all the files.<br />
 2 - Run the following command "uvicorn main:app --reload" <br />
@@ -9,3 +9,9 @@ Below are the steps to run the code: <br />
 5 - When the page opens it will show all the endpoints. <br />
 6 - The endpoints can be run by clikcing Try it Out. <br />
 7 - The format of the queries will be shown below the endpoint itself. <br />
+<br />
+**database.py** - Contains the code to initialise the database connection and database name.<br />
+**models.py** - Contains the database table structure.<br />
+**schemas.py** - Contains the code of the format in whihc data will be communicated with the API.<br />
+**crud.py** - Contains the functions to Create, Read, Update and Delete tasks.<br />
+**main.py** - Contains all the endpoints.
