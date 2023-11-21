@@ -70,9 +70,6 @@ def update_user_status(username: str):
     
     if user.is_active is False:
         user.is_active = True
-        # Update user's is_active status in your database
-        # For example: update_user(user) or save the user object
-        # Ensure you have a function like 'update_user' in your_module that handles DB updates
         
     return user
 
