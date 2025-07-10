@@ -110,7 +110,7 @@ headers = {"Authorization": "Bearer <your_jwt_token>"}
 
 1. **Clone/Download the project files**
    ```bash
-   cd c:\Users\prath\Documents\Projects\Delta
+   git clone Task-API
    ```
 
 2. **Install dependencies**
